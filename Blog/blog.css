@@ -1,0 +1,116 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #667eea;
+}
+
+.cta {
+  text-decoration: none;
+  background: #667eea;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #0474f4;
+}
+
+/* AI Button */
+.ai-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.ai-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none; /* You can add a toggle menu for mobile */
+  }
+  .cta {
+    display: none;
+  }
+}
+
+
+.blog-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.blog-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.blog-posts {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.blog-posts.no-blogs {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  height: 200px;            /* adjust height as needed */
+}
+
+.blog-posts h2 {
+  font-size: 2rem;
+  color: #667eea;
+  text-align: center;
+}
+
+
+

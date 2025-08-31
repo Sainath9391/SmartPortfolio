@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="lets_Talk.css">
+</head>
+<body>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a project, internship opportunity, or idea? Let's connect!</p>
+      
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="cta">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:sainathpendalwar43@gmail.com">sainathpendalwar43@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919391571821">+91 9391571821</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const formData = {
+        name: document.querySelector("input[name='name']").value,
+        email: document.querySelector("input[name='email']").value,
+        message: document.querySelector("textarea[name='message']").value,
+      };
+
+      try {
+        const response = await fetch("http://localhost:5000/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+        if (result.success) {
+          alert("✅ Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        } else {
+          alert("❌ Failed to send message.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("⚠️ Something went wrong!");
+      }
+    });
+  </script>
+</body>
+</html>

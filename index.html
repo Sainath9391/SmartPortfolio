@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">MY PROFILE</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+           <button id="ai-assistant-btn" class="ai-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 2h20v14H6l-4 4V2z"/>
+              </svg>
+              Ask AI Assistant
+            </button>
+            <a href="letsTalk/lets_Talk.html" class="cta">Let’s Talk</a>
+        </nav>
+        <div class="hero-content-container">
+            <div class="content">
+                <h1>Hey! I am <br> <span>Pendalwar Sainath</span></h1>
+                <p>
+                    "This is my profile—a journey that began with my birth, filled with countless experiences, challenges, and achievements, shaping me into the person I am today. 
+                    From my first steps to discovering my passions and pursuing my dreams, every chapter has contributed to the growth and resilience that define me now."
+                </p>
+                <div class="btn-group">
+                    <a href="./LearnMore/learn.html" class="btn primary">Learn More</a>
+                    <a href="letsTalk/lets_Talk.html" class="btn secondary">Hire Me</a>
+                </div>
+            </div>
+            <div class="profile-image-container">
+                <img src="Sai1.jpg" alt="Sainath Profile Picture">
+            </div>
+        </div>
+    </header>
+ <main>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                
+                <div class="about-text">
+                    <p>Hi! I’m currently Pursuing CSE(Data Science) B.Tech @ student at Malla Reddy Engineering College, Hyderabad, passionate about coding, problem-solving, and building impactful web applications.</p>
+                    <p>My core skills include Data Structures & Algorithms using C++, along with Web Development using JavaScript, SQL, and NoSQL technologies. Recently, I completed an internship offered by the Edunet Foundation, in collaboration with EY GDS & AICTE, where I gained hands-on experience in Full Stack Web Development with the MERN stack.</p>
+                    <p>I enjoy exploring new technologies, expanding my skill set, and applying what I learn to real-world projects. With a strong interest in the software field, I’m eager to connect, collaborate, and keep growing as a developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-heading">My Skills</h2>
+    <div class="skills-wrapper">
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5">
+        <span>HTML5</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS3">
+        <span>CSS3</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React">
+        <span>React</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js">
+        <span>Node.js</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind">
+        <span>Tailwind CSS</span>
+      </div>
+
+      
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+
+
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB">
+        <span>MongoDB</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++">
+        <span>C++</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-heading">My Projects</h2>
+          <div class="projects-wrapper">
+
+          <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="images/AIVoiceAssistant.png" 
+           alt="Project 1" class="project-img" data-title="Project Title One" data-description="AI Voice Assistant is an intelligent Progressive Web Application (PWA) built with Next.js that enables natural, real-time interaction between users and AI through voice. Designed with an offline-first approach, it supports seamless installation as a PWA, ensuring accessibility even without a constant internet connection. The assistant provides speech-to-text conversion for capturing user input, leverages OpenAI GPT models to generate intelligent responses, and uses text-to-speech synthesis to deliver those responses back as natural audio output. With sub-1.2 second optimized response times and real-time performance tracking, it ensures smooth and responsive interactions. The application is powered by Next.js 15, TypeScript, and Tailwind CSS for a scalable and modern frontend, while Web Workers handle background tasks such as speech recognition and synthesis, and Service Workers add offline and caching support. Its modular architecture organizes APIs, reusable UI components, and utilities efficiently, making the system flexible for future enhancements. Additionally, the assistant incorporates enhanced accessibility features, supporting multiple languages, customizable voice options, and adaptive UI for users with disabilities. By blending AI capabilities with robust web technologies, this project demonstrates how PWAs can evolve into fully functional, AI-powered voice assistants that are fast, interactive, inclusive, and user-friendly.">
+
+        <div class="project-content">
+          <h3>AI-voice-Assistant</h3>
+          <p>A brief description of the project, the problem it solves, and its main features.</p>
+          <div class="tags">
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="buttons">
+            <a href="https://voice-assistant-pwa.onrender.com/">Live Demo</a>
+            <a href="https://github.com/Sainath9391/AI-voice-Assistant">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-title"></h2>
+          <p class="modal-description"></p>
+        </div>
+      </div>
+
+
+            <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="images/soulSync.png" 
+            alt="Project 2" class="project-img" 
+            data-title="Project Title Two" 
+            data-description="This is Project Two's detailed explanation. It uses Vue.js and Firebase to build a dynamic web app. You can describe its features, tech stack, and problem it solves here.">
+
+        <div class="project-content">
+          <h3>SoulSyncEmotionAware-AI</h3>
+          <p>A brief description of the project, the problem it solves, and its main features.</p>
+          <div class="tags">
+            <span>React</span>
+            <span>MongoDB</span>
+            <span>Node.js</span>
+          </div>
+          <div class="buttons">
+            <a href="#">Live Demo</a>
+            <a href="https://github.com/Sainath9391/SoulSync-Emotion-Aware-AI">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="images/zomatoClone.png" 
+            alt="Project 3" class="project-img"
+            data-title="Project Title Three"
+            data-description="This is Project Three's detailed explanation. Built with HTML, CSS, and JavaScript. You can add features, description, and technologies used.">
+
+        <div class="project-content">
+          <h3>Zomato_Clone</h3>
+          <p>A brief description of the project, the problem it solves, and its main features.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="buttons">
+            <a href="https://sainath9391.github.io/FULLSTACK-WEBDEVELOPMENT-PROJECT/">Live Demo</a>
+            <a href="https://github.com/Sainath9391/FULLSTACK-WEBDEVELOPMENT-PROJECT">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+<div class="project-card">
+  <img src="images/forgetMeNotAI.png" 
+      alt="Project 4" class="project-img"
+      data-title="Project Title Four"
+      data-description="ForgetMeNot AI is an interactive simulation platform that models human memory decay using exponential functions. Users can store memories with customizable importance (salience), and the system automatically adjusts their significance over time, mimicking how humans naturally forget information. The project combines a FastAPI backend with a JavaScript-based frontend to provide real-time visualization and interaction, making it an excellent tool for cognitive science research, personalized learning systems, and AI experiments in memory modeling. Its modular design ensures easy integration, extendability, and potential for advanced features like user authentication, adaptive decay rates, and graphical decay visualizations.">
+
+  <div class="project-content">
+    <h3>ForgetMeNot-AI</h3>
+    <p>A brief description of the project, the problem it solves, and its main features.</p>
+    <div class="tags">
+      <span>React</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+    </div>
+    <div class="buttons">
+      <a href="https://forgetmenot-ai-1.onrender.com/">Live Demo</a>
+      <a href="https://github.com/Sainath9391/ForgetMeNot-AI-" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project Card 5 -->
+<div class="project-card">
+  <img src="images/myStoryBuilder.png" 
+      alt="Project 5" class="project-img"
+      data-title="Project Title Five"
+      data-description="MyStoryBuilder is an intuitive tool that transforms scattered text posts — like diary entries, social media updates, or personal reflections — into a cohesive, first-person life story. By analyzing key moments in your text, the system generates a natural, meaningful narrative that helps you reflect on your experiences, share them with others, or preserve them for future reference. With offline capabilities and optional cloud integration via OpenAI or Gemini, MyStoryBuilder ensures both privacy and flexibility. Its modular design also allows for future enhancements, such as incorporating images, videos, or multilingual support.">
+
+  <div class="project-content">
+    <h3>MyStoryBuilder</h3>
+    <p>A brief description of the project, the problem it solves, and its main features.</p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+    </div>
+    <div class="buttons">
+      <a href="#">Live Demo</a>
+      <a href="https://github.com/Sainath9391/MyStoryBuilder" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+   <section id="experience" class="experience">
+  <div class="container">
+    <h2>Work Experience</h2>
+
+    <div class="timeline">
+          <!-- EY GDS + AICTE Internship -->
+      <div class="timeline-item">
+        <div class="content">
+          <h3>Full-Stack Developer Intern</h3>
+          <h4>EY GDS + AICTE Virtual Internship Program</h4>
+          <p class="period">Feb 2025 – Mar 2025</p>
+          <ul>
+            <li>Built scalable web applications using the MERN stack with user authentication and secure RESTful API handling</li>
+            <li>Participated in Agile sprints; resolved backend deployment issues and integrated new tools for team velocity</li>
+            <li>Led backend development of a multilingual quiz platform under real-time evaluation</li>
+          </ul>
+        </div>
+      </div>
+
+          <!-- Smart India Hackathon -->
+      <div class="timeline-item">
+        <div class="content">
+          <h3>Smart India Hackathon [SIH]</h3>
+          <h4>National Hackathon</h4>
+          <p class="period">Sept 2024</p>
+          <ul>
+            <li>Led backend development of a multilingual quiz platform under live evaluation</li>
+            <li>Worked with mentors on solving deployment issues and real-time data synchronization</li>
+            <li>Delivered a working prototype during final presentation under strict deadlines</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GSSoC -->
+      <div class="timeline-item">
+        <div class="content">
+          <h3>Open Source Contributor</h3>
+          <h4>GirlScript Summer of Code (GSSoC)</h4>
+          <p class="period">Aug 2025</p>
+          <ul>
+            <li>Selected as a contributor for GSSoC, a prestigious nationwide open-source program with global participation</li>
+            <li>Contributing to real-world projects, collaborating with developers both within India and internationally</li>
+            <li>Implementing features, fixing bugs, and improving documentation to enhance project quality</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 24-Hour Hackathon -->
+      <div class="timeline-item">
+        <div class="content">
+          <h3>24-Hour Internal Hackathon</h3>
+          <h4>College Event</h4>
+          <p class="period">Nov 2024</p>
+          <ul>
+            <li>Built and deployed an interactive learning platform with real-time scoring and accessibility features</li>
+            <li>Handled last-minute feature requests and rapid iterations while ensuring a stable end-to-end demo</li>
+          </ul>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+
+        <section id="education" class="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="education-timeline">
+      
+      <div class="education-item">
+        <h3>B.Tech in Computer Science & Engineering (Data Science)</h3>
+        <h4>Malla Reddy Engineering College, Hyderabad</h4>
+        <p class="period">2023 – 2027 (Expected)</p>
+        <ul>
+          <li>Specialization in Data Science, System Architecture, and Performance Optimization</li>
+          <li>Projects: AI voice assistante, Food Delivery Application, Smart College Event Insights Dashboard,</li>
+          <li>Active participant in hackathons (Smart India Hackathon, Internal Hackathons)</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Higher Secondary (Diploma)</h3>
+        <h4>Govt Politechnic Nizamabad</h4>
+        <p class="period">2021 – 2024</p>
+        <ul>
+          <li>Focus on Physics, Chemistry, and Mathematics</li>
+          <li>Percentage: 9.3 CGPA</li>
+          <li>Engaged in coding competitions and science fairs</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Secondary School (SSC)</h3>
+        <h4>Telangana State Residential School (Boys) Madnoor, kamareddy.</h4>
+        <p class="period">2015 – 2021</p>
+        <ul>
+          <li>Percentage: 10 CGPA</li>
+          <li>Actively involved in Games, science exhibitions, and extracurricular activities</li>
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+</section>
+
+
+ <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- AI Assistant Modal -->
+<div id="ai-assistant-modal" class="ai-modal">
+  <div class="ai-modal-content">
+    <div class="ai-modal-header">
+      <h3>
+        Portfolio AI Assistant
+      </h3>
+      <div class="ai-controls">
+        <!-- Start voice input -->
+        <button id="voice-start-btn" class="voice-btn" title="Start Voice">
+          🎙️
+        </button>
+
+        <!-- Stop voice input -->
+        <button id="voice-stop-btn" class="voice-btn" title="Stop Voice">
+          ⏹
+        </button>
+
+        <!-- Close modal -->
+        <span class="ai-close" title="Close">
+          ✖
+        </span>
+      </div>
+    </div>
+    <div class="ai-chat-container">
+      <div id="ai-chat-messages" class="ai-chat-messages">
+        <div class="ai-message ai-assistant">
+          <div class="ai-avatar">
+            🤖
+          </div>
+          <div class="ai-message-content">
+            <p>Hello! I'm Sainath's Portfolio AI Assistant. I can help you learn about his skills, projects, experience, and education. What would you like to know?</p>
+            <div class="ai-suggestions">
+              <button class="ai-suggestion-btn" data-question="Tell me about Sainath's skills">Skills</button>
+              <button class="ai-suggestion-btn" data-question="What projects has Sainath worked on?">Projects</button>
+              <button class="ai-suggestion-btn" data-question="What is Sainath's experience?">Experience</button>
+              <button class="ai-suggestion-btn" data-question="Tell me about Sainath's education">Education</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ai-input-container">
+        <input type="text" id="ai-input" placeholder="Ask me anything about Sainath's portfolio..." />
+        <button id="ai-send-btn">➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about-me">
+                <h3>About me</h3>
+                <div class="placeholder-line">student</div><br>
+                <div class="placeholder-line">Developer</div><br>
+                <div class="placeholder-line">Aspirant</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="Blog/blog.html">Blog</a></li>
+                    <li><a href="FAQs/index.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: sainathpendalwar43@gmail.com</p>
+                <p>Phone: +91 9391571821</p>
+                <p>Address: Maisammaguda Medchal Hyderabad</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow me</h3>
+                <div class="social-icons">
+                    <!-- Social Links -->
+                    <a href="https://github.com/Sainath9391" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://leetcode.com/u/3DC5ZNZWYF/" target="_blank" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pendalwar-sainath-598169349/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="tagline">Stay Connected!</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pendalwar Sainath / Malla Reddy Engineering College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+<script src="ai-assistant.js"></script>
+</body>
+</html>

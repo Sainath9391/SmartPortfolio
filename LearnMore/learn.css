@@ -1,0 +1,275 @@
+ /* ==========================================================================
+           1. VARIABLES & GLOBAL STYLES
+           ========================================================================== */
+        :root {
+            --primary-color: #0b8793;
+            --secondary-color: #1e3c72;
+            --accent-color: #ffcc00;
+            --highlight-color: #00c1d4;
+            --light-bg: #f0f9ff;
+            --light-gray: #cce7f0;
+            --white-color: #ffffff;
+            --dark-text: #333;
+            --light-text: #555;
+            --card-shadow: 0 8px 24px rgba(11, 135, 147, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #f0f9ff;
+            overflow-x: hidden;
+        }
+
+        /* ==========================================================================
+           2. NAVIGATION BAR
+           ========================================================================== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(11, 135, 147, 0.85);
+            color: var(--white-color);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+        
+        .logo {
+            font-size: 1.9rem;
+            font-weight: 900;
+            background: linear-gradient(
+              90deg, 
+              rgba(255, 105, 180, 0.85),
+              rgba(0, 255, 255, 0.85),
+              rgba(255, 255, 0, 0.85),
+              rgba(255, 0, 255, 0.85)
+            );
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .nav-links a {
+            color: var(--white-color);
+            text-decoration: none;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta {
+            background: var(--highlight-color);
+            color: var(--white-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta:hover {
+            background: var(--accent-color);
+            color: var(--dark-text);
+            transform: scale(1.05);
+        }
+
+        /* ==========================================================================
+           3. ABOUT ME / LEARN MORE PAGE
+           ========================================================================== */
+        .about-page-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 120px 20px 60px; /* Padding-top to clear the fixed navbar */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        .about-content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .about-image {
+            flex-basis: 30%;
+            min-width: 250px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 3px solid var(--highlight-color);
+        }
+
+        .about-text {
+            flex-basis: 70%;
+        }
+
+        .about-text h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--white-color);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--highlight-color);
+            display: inline-block;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: var(--light-gray);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            color: var(--white-color);
+            margin-bottom: 10px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: var(--light-gray);
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* ==========================================================================
+           4. BUTTONS
+           ========================================================================== */
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn.primary {
+            background: var(--highlight-color);
+            color: var(--white-color);
+        }
+
+        .btn.primary:hover {
+            background: var(--accent-color);
+            color: var(--dark-text);
+            transform: translateY(-3px);
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: var(--white-color);
+            border-color: var(--white-color);
+        }
+
+        .btn.secondary:hover {
+            background: var(--white-color);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* ==========================================================================
+           5. ANIMATIONS & RESPONSIVE DESIGN
+           ========================================================================== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simple responsive behavior for example */
+            }
+
+            .about-content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .about-image {
+                margin-bottom: 30px;
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .page-title {
+                font-size: 2.2rem;
+            }
+
+            .about-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+        }
+
+
